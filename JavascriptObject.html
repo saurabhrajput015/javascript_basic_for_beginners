@@ -1,0 +1,34 @@
+<!-- A Javascript object is a collection of named values.
+the named values ,in Javascript objects ,are called
+properties
+objects are variables containing variables
+Javascript variables can contain singles values 
+object are variables too.but objects can contain many
+values
+the values are written as name:values pairs (name and value separated by a colon) -->
+
+
+
+<script >
+    var gaurTechnical={
+        firstname:"Saurabh",
+        lastname:"Singh",
+        age:25,
+        profession:"Software Developer"
+    }
+    console.log(gaurTechnical);
+    console.log(gaurTechnical.firstname);
+    console.log(gaurTechnical.lastname);
+
+    //change the property name value
+    gaurTechnical.profession="Software Engineer"
+    console.log(gaurTechnical);
+
+    //Add a new property
+    gaurTechnical.middlename="Shailendra";
+    console.log(gaurTechnical);
+
+    //delete property name
+    delete gaurTechnical.middlename;
+    console.log(gaurTechnical);
+</script>

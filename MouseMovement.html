@@ -1,0 +1,26 @@
+<script>
+    //mouse X position
+    let mouseXStartPoint =300;
+    let mouseXEndPoint =window.innerWidth - 300;
+    let currentXPosition =0;
+    let fraceXValue = 0;
+
+    //mouse Y position
+    let mouseYEndPoint = window.innerHight;
+    let currentYPosition =0;
+    let fraceYValue =0;
+
+    let mouseXRange = mouseXEndPoint - mouseXStartPoint;
+    const mouseMove = (event) => {
+        //console.log(`x value = ${event.clientX} Y value = ${event.clientY}`);
+        currentXPosition = event.clientX;
+        fraceXValue = currentXPosition / mouseXRange;
+        console.log("X = " +fraceXValue);
+
+        currentYPosition = event.clientY;
+        fraceYValue = currentYPosition / mouseYEndPoint;
+        console.log("Y = " +fraceYValue);
+
+    }
+    window.addEventListener('mousemove',mouseMove)
+</script>

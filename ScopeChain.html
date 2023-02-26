@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    var x=0;
+    var y1='Welcome To My Channel :) ';
+    console.log(x);
+
+    f1();
+    function f1(){
+            debugger;
+            var localvarf1 ='subscribe to my channel';
+            var y2='check this out y2 inside f1()';
+            console.log(x);
+
+            f2();
+            function f2(){
+                debugger;
+                var localvarf2 ='like this video';
+                var y3='check this out y3 inside f1()';
+                console.log(x);
+            
+              f3();
+              function f3(){
+                debugger;
+                var localvarf3 ='like this video';
+                var y4='check this out y3 inside f2()';
+                console.log(x);
+                //climb up the scope chain
+                console.log(y4);
+                console.log(y3);
+                console.log(y2);
+                console.log(y1);
+            
+            }
+
+        }
+
+    }
+    
+</script>

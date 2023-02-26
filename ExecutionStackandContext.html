@@ -1,0 +1,31 @@
+<!-- Execution Stack also known as calling stack is a stack with 
+a LIFO(Last in, First out) structure,
+which is used to store all the Execution context
+created during the code Execution 
+
+-->
+
+<script>
+var globalEC ="added";
+
+function a(){
+    var fa = "2nd function 0/p1";
+    console.log(fa);
+    debugger;
+    b();
+    console.log("lets see when i will be on console");
+}
+
+function b(){
+    debugger;
+    console.log("2nd function 0/p2");
+    c();
+}
+
+function c(){
+    debugger;
+    console.log("3rd function 0/p3");
+    debugger;
+    a();
+}
+</script>
