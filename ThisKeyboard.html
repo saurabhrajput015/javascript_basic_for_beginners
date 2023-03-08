@@ -1,0 +1,34 @@
+<script>
+
+//   function sum(){
+//     var add = 2+2;
+//     console.log("sum of two no. is "+add);
+//     console.log(this);
+// }
+
+// sum();
+
+const thapa ={
+    name    :"Vinod Thapa",
+    qualif  :"MCS",
+    sum     : function(){
+              var add = 2 + 2;
+              console.log("sum of two no. is " +add);
+              console.log(this.name);
+              console.log(this);
+
+              console.log(this);
+
+              function child(){
+                var name="thapa";
+                console.log("child method name:" +name);
+                console.log(this);
+              }
+
+              child();
+    }
+}
+
+   thapa.sum();
+
+</script>
